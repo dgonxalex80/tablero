@@ -8,7 +8,7 @@ output:
       fg: "#034A94" 
       primary: "#034A94" 
       base_font:
-        google: Prompt
+        google: Sen
       code_font:
         google: JetBrains Mono
     orientation: columns
@@ -156,7 +156,7 @@ col ="#ee964b")
 
 Column { data-width=50 }
 -----------------------------------------------------------------------
-### apertura  {.value-box}
+### minimo  {.value-box}
 ```{r}
 valueBox(value =paste(round(min(CarreraLuz22$timerun/60),1), "min"), 
          caption = "Tiempo ganador", 
@@ -165,7 +165,7 @@ valueBox(value =paste(round(min(CarreraLuz22$timerun/60),1), "min"),
 ```
 
 
-### cierre  {.value-box}
+### velocidad  {.value-box}
 ```{r}
 valueBox(value =paste(round(10070/min(CarreraLuz22$timerun),2),"m/s"), # ud1$cierre, 
          caption = "Máxima velocidad", 
@@ -174,7 +174,7 @@ valueBox(value =paste(round(10070/min(CarreraLuz22$timerun),2),"m/s"), # ud1$cie
 ```
 
 
-### minimo  {.value-box}
+### distancia  {.value-box}
 ```{r}
 valueBox(value = paste(10.07,"Km"), #ud1$min, 
          caption = "Distancia recorrida", 
@@ -192,7 +192,7 @@ valueBox(value = paste(length(CarreraLuz22$timerun),"atletas"),
 ```
 
 
-### volumen  {.value-box}
+### porcentaje  {.value-box}
 ```{r}
 valueBox(value = paste(round(length(CarreraLuz22F$timerun)/length(CarreraLuz22$timerun)*100,2),"%"), 
          caption = "Porcentaje mujeres", 
@@ -200,7 +200,7 @@ valueBox(value = paste(round(length(CarreraLuz22F$timerun)/length(CarreraLuz22$t
          color = "#0EB0C6")
 ```
 
-### volumen  {.value-box}
+### promedio  {.value-box}
 ```{r}
 valueBox(value = paste(round(mean(CarreraLuz22$timerun/60),2),"min"), 
          caption = "Tiempo promedio de carrera", 
